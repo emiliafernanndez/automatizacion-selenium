@@ -33,11 +33,5 @@ WebDriverWait(driver, 5).until(
 
 print("El título de la página es correcto:", driver.title)
 
-driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-time.sleep(2) 
-driver.execute_script("window.scrollTo(0, 0);")
-print("Desplazamiento completado.")
-
-
-time.sleep(3)
+time.sleep(5)
 driver.quit()
